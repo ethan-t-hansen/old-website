@@ -32,7 +32,7 @@ function Body1() {
                     Buy my product!
                 </h1>
                 <p className="hidden">
-                    The quick brown fox jumps over the fence
+                    It's really good.
                 </p>
             </section>
         </body>
