@@ -17,12 +17,22 @@ section {
 
 .hidden {
   opacity: 0;
-  transition: all 2s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
 .show {
   opacity: 1;
-  transition: all 2s;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 1s;
+}
+
+/* Navbar CSS */
+
+.navbar-default {
+  background: none;
 }
 
 

@@ -6,8 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      {/* <NavBar/> */}
+    <div className="App">     
+      <NavBar/>
       <Body1/>
     </div>
   );

@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavBar() {
   return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="none" variant="light">
         <Container>
           <Navbar.Brand href="#home">
             <img
