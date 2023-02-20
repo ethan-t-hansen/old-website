@@ -24,7 +24,7 @@ function Body1() {
                     Hello!
                 </h1>
                 <p className="hidden">
-                    This is my website.
+                    Welcome to my website.
                 </p>
             </section>
             <section>
