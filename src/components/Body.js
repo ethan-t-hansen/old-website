@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import NavBar from './NavBar';
 
 function Body1() {
 
@@ -19,9 +20,10 @@ function Body1() {
 
     return (
         <body>
-            <section>
+            <NavBar/>
+            <section className='section-first'>
                 <h1 className="hidden">
-                    Hello!
+                    Hello! I'm Ethan
                 </h1>
                 <p className="hidden">
                     Welcome to my website.
@@ -29,10 +31,10 @@ function Body1() {
             </section>
             <section>
                 <h1 className="hidden">
-                    Buy my product!
+                    This is a WIP
                 </h1>
                 <p className="hidden">
-                    It's really good.
+                    Using ReactJS and CSS
                 </p>
             </section>
         </body>

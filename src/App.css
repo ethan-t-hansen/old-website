@@ -1,11 +1,19 @@
 /* Body CSS */
 
+* {
+  /* border: 1px solid red; */
+}
+
 .body {
   background-color: #121212;
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
+}
+
+.section-first {
+  min-height: 70vh;
 }
 
 section {
@@ -31,10 +39,19 @@ section {
 
 /* Navbar CSS */
 
-.navbar-default {
-  background: none;
+.sticky-nav {
+  position: sticky;
+  top: 0;
 }
 
+.navbar {
+  position: fixed;
+  z-index: 100;
+}
+
+.navbar-text {
+  align-items: right;
+}
 
 /* Default CSS */
 
