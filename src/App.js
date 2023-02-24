@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  document.title = "Ethan's Portfolio";
   return (
     <div className="App">     
       <Body/>

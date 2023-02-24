@@ -21,9 +21,8 @@ function Footer() {
                     <div class="col-xs-6 col-md-3">
                         <h6>Contact Me</h6>
                         <ul class="footer-links">
-                            <li><a href="">LinkedIn</a></li>
-                            <li><a href="">Email</a></li>
-                            <li><a href="">Phone</a></li>
+                            <li><a href="https://www.linkedin.com/in/ethanth">LinkedIn</a></li>
+                            <li><a href="https://github.com/ethan-t-hansen">GitHub</a></li>
                         </ul>
                     </div>
                 </div>
