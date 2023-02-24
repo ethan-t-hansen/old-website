@@ -1,7 +1,6 @@
 import NavBar from './NavBar';
 import email_proj from '../assets/email_proj.jpg';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { SocialIcon } from 'react-social-icons';
 
 function Body1() {
@@ -16,40 +15,37 @@ function Body1() {
                 }
             });
         });
-        const hiddenElements = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-bottom');
+        const hiddenElements = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-bottom, .hidden-bottom-2');
         hiddenElements.forEach((el) => observer.observe(el));
     });
 
-
     return (
         <body>  
-            <section className='section'>
+            <section>
                 <h1 className="hidden-bottom">
                     Hello! I'm Ethan
                 </h1>
                 <p className="hidden-bottom">
                     Welcome to my website.
                 </p>
-                <div className="socials">
-                    <SocialIcon url="https://linkedin.com/in/ethanth" bgColor="#ffffff" style={{ height: 35, width: 35}}/>
-                    <SocialIcon url="https://github.com/ethan-t-hansen" bgColor="#ffffff" style={{ height: 35, width: 35}}/>
+                <div className="socials hidden-bottom-2">
+                    <SocialIcon url="https://linkedin.com/in/ethanth" bgColor="#121212" style={{ height: 35, width: 35}}/>
+                    <SocialIcon url="https://github.com/ethan-t-hansen" bgColor="#121212" style={{ height: 35, width: 35}}/>
                 </div>
             </section>
             <NavBar/>
             <section/>
             <section>
                 <h1>
-                    This is a WIP
+                    About Me
                 </h1>
                 <p>
                     Using ReactJS and CSS
                 </p>
             </section>
             <section>
-                <div>
-                    <h1> Projects </h1>
-                    <div class="hr"/>
-                </div>
+                <h1>Projects</h1>
+                <div class="hr"/>
                 <div> 
                     <div class="card">
                         <img src={email_proj} class="card-img"/>

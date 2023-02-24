@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 /* Body CSS */
 
 * {
   /* border: 1px solid red; */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .body {
   background-color: #121212;
   color: #ffffff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -28,7 +31,7 @@ section:nth-of-type(1) {
   position:absolute;
   width:100%;
   height:100%;
-  background-image: url("./assets/section1_bg.jpg");
+  /* background-image: url("./assets/section1_bg.jpg"); */
   background-size: cover;
   background-blend-mode: darken;
 }
@@ -57,6 +60,13 @@ section:nth-of-type(2) {
   filter: blur(5px);
   transform: translateY(100%);
   transition: all 1s;
+}
+
+.hidden-bottom-2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 2s;
 }
 
 
@@ -101,11 +111,12 @@ section:nth-of-type(2) {
  }
  
  .card-details {
-  color: black;
+  color: #121212;
   height: 100%;
   gap: .5em;
   display: grid;
   place-content: center;
+  text-align: center;
  }
  
  .card-button {
@@ -125,13 +136,15 @@ section:nth-of-type(2) {
  }
  
  .card-text-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(134, 134, 134);
  }
  
  /* Text */
+ h1 {
+  align-self: center;
+ }
+
  .card-text-title {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 1em;
   font-size: 1.5em;
   font-weight: 600;
@@ -169,52 +182,11 @@ section:nth-of-type(2) {
 /* Divider CSS */
 
 .hr {
-  width: 50vh;
+  width: 70vw;
   margin-top: 1em;
   margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-}
-
-/* Default CSS */
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
