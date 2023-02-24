@@ -23,7 +23,7 @@ function NavBar() {
   return (
       <Navbar expand="lg" variant="light" className='sticky-lg-top'>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home" className="hidden-bottom">
             <img
               alt=""
               src={logo}
@@ -37,7 +37,7 @@ function NavBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
             </Nav>
-            <Nav className='hidden'>
+            <Nav className='hidden-bottom'>
               <Nav.Link href="#home">home</Nav.Link>
               <Nav.Link eventKey={2} href="#projects">
                 projects

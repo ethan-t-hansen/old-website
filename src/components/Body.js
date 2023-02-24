@@ -1,5 +1,8 @@
-import Container from 'react-bootstrap/Container';
 import NavBar from './NavBar';
+import email_proj from '../assets/email_proj.jpg';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
 
 function Body1() {
 
@@ -10,32 +13,79 @@ function Body1() {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
                 } else {
-                    entry.target.classList.remove('show');
                 }
             });
         });
-        const hiddenElements = document.querySelectorAll('.hidden');
+        const hiddenElements = document.querySelectorAll('.hidden-right, .hidden-left, .hidden-bottom');
         hiddenElements.forEach((el) => observer.observe(el));
     });
 
+
     return (
-        <body>
-            <NavBar/>
-            <section className='section-first'>
-                <h1 className="hidden">
+        <body>  
+            <section className='section'>
+                <h1 className="hidden-bottom">
                     Hello! I'm Ethan
                 </h1>
-                <p className="hidden">
+                <p className="hidden-bottom">
                     Welcome to my website.
+                </p>
+                <div className="socials">
+                    <SocialIcon url="https://linkedin.com/in/ethanth" bgColor="#ffffff" style={{ height: 35, width: 35}}/>
+                    <SocialIcon url="https://github.com/ethan-t-hansen" bgColor="#ffffff" style={{ height: 35, width: 35}}/>
+                </div>
+            </section>
+            <NavBar/>
+            <section/>
+            <section>
+                <h1>
+                    This is a WIP
+                </h1>
+                <p>
+                    Using ReactJS and CSS
                 </p>
             </section>
             <section>
-                <h1 className="hidden">
-                    This is a WIP
-                </h1>
-                <p className="hidden">
-                    Using ReactJS and CSS
-                </p>
+                <div>
+                    <h1> Projects </h1>
+                    <div class="hr"/>
+                </div>
+                <div> 
+                    <div class="card">
+                        <img src={email_proj} class="card-img"/>
+                        <div class="card-details">
+                            <p class="card-text-title">Cold Outreach Program</p>
+                            <p class="card-text-body">
+                                Streamlines cold emailing processes with personalized messages and automated parsing through contact spreadsheets.
+                            </p>
+                        </div>
+                        <button class="card-button">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src={email_proj} class="card-img"/>
+                        <div class="card-details">
+                            <p class="card-text-title">Cold Outreach Program</p>
+                            <p class="card-text-body">
+                                Streamlines cold emailing processes with personalized messages and automated parsing through contact spreadsheets.
+                            </p>
+                        </div>
+                        <button class="card-button">Learn More</button>
+                    </div>
+                    <div class="card">
+                        <img src={email_proj} class="card-img"/>
+                        <div class="card-details">
+                            <p class="card-text-title">Cold Outreach Program</p>
+                            <p class="card-text-body">
+                                Streamlines cold emailing processes with personalized messages and automated parsing through contact spreadsheets.
+                            </p>
+                        </div>
+                        <button class="card-button">Learn More</button>
+                    </div>
+                </div>
+                
+            </section>
+            <section>
+
             </section>
         </body>
     );
