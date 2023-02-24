@@ -1,0 +1,87 @@
+/* Project Card CSS */
+.card {
+    float: left;
+    width: 240px;
+    height: 160px;
+    border-radius: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.6rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card:nth-child(1) {
+    margin-left: 0;
+}
+
+.card:nth-child(3) {
+    margin-right: 0;
+}
+
+.card-details {
+    color: #121212;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    text-align: center;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.card-text-title {
+    margin-top: 1.2em;
+    margin-bottom: 0.8em;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-img-wrap {
+    height: 200px;
+    width: 100%
+}
+
+.card-text-wrap {
+    height: 100px;
+    width: 100%;
+}
+
+.card-text-body {
+    font-size: 0.8rem;
+    color: rgb(134, 134, 134);
+}
+
+/* Image */
+.card-img {
+    gap: 1em;
+}
+
+/*Hover*/
+.card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}

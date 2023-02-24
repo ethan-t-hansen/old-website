@@ -1,0 +1,14 @@
+.sticky-lg-top {
+    z-index: 9;
+    position: absolute;
+    width:100%;
+    height:16vh;
+  }
+  
+  .navbar-text {
+    align-items: right;
+  }
+  
+  .navbar {
+    z-index: 9;
+  }

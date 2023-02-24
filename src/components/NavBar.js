@@ -1,9 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../assets/personal_logo.png';
+import '../styles/NavBar.css';
 
 function NavBar() {
 
@@ -42,10 +41,10 @@ function NavBar() {
               <Nav.Link eventKey={2} href="#projects">
                 projects
               </Nav.Link>
-              <Nav.Link eventKey={3} href="#designs">
+              {/* <Nav.Link eventKey={3} href="#designs">
                 designs
-              </Nav.Link>
-              <Nav.Link eventKey={4} href="#resume">
+              </Nav.Link> */}
+              <Nav.Link eventKey={3} href="#resume">
                 resume
               </Nav.Link>
             </Nav>
