@@ -39,7 +39,7 @@ function Body1() {
             <section className='about'>
                 <h1 className='h1-space-bot hidden-bottom'>About me</h1>
                 <p className="hidden-bottom"> I'm a third year student at the University of British Columbia studying Business & Computer Science. </p>
-                <p className="hidden-bottom"> I have a passion for building and designing, which is why I love designing programs, building applications, and creating graphics. </p>
+                <p className="hidden-bottom"> I have a passion for building and creating, which is why I love designing and coding applications</p>
             </section>
             <div id="projects" />
             <section>
