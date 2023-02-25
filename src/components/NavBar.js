@@ -44,7 +44,7 @@ function NavBar() {
               {/* <Nav.Link eventKey={3} href="#designs">
                 designs
               </Nav.Link> */}
-              <Nav.Link eventKey={3} href="#resume">
+              <Nav.Link eventKey={3} target="_blank" href="https://drive.google.com/file/d/1wmkfTUOGd4MEX1Mi9ibFaMWNhz_r9f8t/view?usp=sharing">
                 resume
               </Nav.Link>
             </Nav>
