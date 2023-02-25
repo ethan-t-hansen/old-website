@@ -38,13 +38,13 @@ function NavBar() {
             </Nav>
             <Nav className='hidden-bottom'>
               <Nav.Link href="#home">home</Nav.Link>
-              <Nav.Link eventKey={2} href="#projects">
+              <Nav.Link eventKey={2} href="#about">
+                about
+              </Nav.Link>
+              <Nav.Link eventKey={3} href="#projects">
                 projects
               </Nav.Link>
-              {/* <Nav.Link eventKey={3} href="#designs">
-                designs
-              </Nav.Link> */}
-              <Nav.Link eventKey={3} target="_blank" href="https://drive.google.com/file/d/1wmkfTUOGd4MEX1Mi9ibFaMWNhz_r9f8t/view?usp=sharing">
+              <Nav.Link eventKey={4} target="_blank" href="https://drive.google.com/file/d/1wmkfTUOGd4MEX1Mi9ibFaMWNhz_r9f8t/view?usp=sharing">
                 resume
               </Nav.Link>
             </Nav>

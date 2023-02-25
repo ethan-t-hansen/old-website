@@ -19,7 +19,7 @@ section {
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 section:nth-of-type(1) {
@@ -75,6 +75,13 @@ section:nth-of-type(2) {
 
 .div-text {
   text-align: left;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: top;
 }
 
 /* Socials CSS */

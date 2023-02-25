@@ -32,14 +32,19 @@ function Body1() {
                     <SocialIcon url="https://linkedin.com/in/ethanth" bgColor="#121212" style={{ height: 35, width: 35 }} />
                     <SocialIcon url="https://github.com/ethan-t-hansen" bgColor="#121212" style={{ height: 35, width: 35 }} />
                 </div>
+                <div id="about"/>
             </section>
             <NavBar />
             <section />
-            <div id="projects"/>
+            <section className='about'>
+                <h1 className='h1-space-bot hidden-bottom'>About me</h1>
+                <p className="hidden-bottom"> I'm a third year student at the University of British Columbia studying Business & Computer Science. </p>
+                <p className="hidden-bottom"> I have a passion for building and designing, which is why I love designing programs, building applications, and creating graphics. </p>
+            </section>
+            <div id="projects" />
             <section>
-                <h1 className='h1-space-bot'>Projects</h1>
-                {/* <div class="hr"/> */}
-                <div>
+                <h1 className='h1-space-bot hidden-bottom'>Projects</h1>
+                <div className="hidden-bottom">
                     <ProjectCard
                         image={tictactoe_proj}
                         title={"Tic-Tac-Toe Web Application"}
@@ -50,7 +55,7 @@ function Body1() {
                     <ProjectCard
                         image={seating_proj}
                         title={"Event Seating Arranger"}
-                        text={"Randomly arranges large-scale event seating based on guest preferences through object-oriented programming."}
+                        text={"Selectively arranges large-scale event seating based on guest preferences through object-oriented programming."}
                         buttontext={"View on GitHub"}
                         link={"https://github.com/ethan-t-hansen/seating-arranger"}
                     />
@@ -62,7 +67,6 @@ function Body1() {
                         link={"https://github.com/ethan-t-hansen/pomo-timer"}
                     />
                 </div>
-
             </section>
         </body>
     );
