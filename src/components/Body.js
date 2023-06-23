@@ -41,14 +41,7 @@ function Body1() {
                 <p className="hidden-bottom"> 
                     Welcome to my personal website! My name is Ethan, and I am a third year student at the University of British Columbia, <br/>
                     majoring in Business and Computer Science. I have always had a passion for creating and designing, and I love to       <br/>
-                    channel that energy into building and coding applications, as well as doing graphic design in Illustrator, Figma,      <br/>
-                    and Photoshop. The process of taking an idea from conception to creation is incredibly rewarding for me, and I find    <br/>
-                    joy in the meticulous details that go into each project.                                                               <br/><br/>
-                    In my free time, I enjoy listening to music, cooking, reading, and playing video games. These hobbies help me unwind   <br/>
-                    and recharge, and I find that they often inspire me creatively as well. As a student of both business and computer     <br/>
-                    science, I am constantly seeking out new ways to bridge the gap between these two fields. I believe that combining     <br/>
-                    business acumen with technical expertise is the key to success in today's world, and I am excited to see where this    <br/>
-                    path will take me in the future.
+                    channel that energy into building and coding applications, as well as doing design in Illustrator and Figma. <br/>
                 </p>
             </section>
             <div id="projects" />
